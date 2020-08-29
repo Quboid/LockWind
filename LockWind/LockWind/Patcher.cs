@@ -14,7 +14,6 @@ namespace LockWind
             if (patched) return;
 
             patched = true;
-            Harmony.DEBUG = true;
             var harmony = new Harmony(HarmonyId);
             harmony.PatchAll();
         }
